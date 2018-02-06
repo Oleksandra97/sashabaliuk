@@ -10,7 +10,7 @@
                     <include name="searchWithIncorrectData"/>
                     <include name="searchByProductCategory"/>
                     <include name="searchByProductCategoryWithAdditionalParameters"/>
-                    <include name="searchMenProducts"/>
+                    <include name="searcWomenProducts"/>
                 </methods>
             </class>
         </classes>
