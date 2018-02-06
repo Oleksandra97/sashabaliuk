@@ -1,0 +1,5 @@
+pages\CategoryRequestPage.class
+core\PropertyHandler.class
+pages\SearchRequestPage.class
+pages\MenuItemRequest.class
+pages\MainPage.class
