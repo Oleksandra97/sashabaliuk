@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.988 s - in TestSuite
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 97.973 s <<< FAILURE! - in TestSuite
+searchByProductCategory(SearchTests)  Time elapsed: 11.877 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.className: //li[@class='item']}
+Expected: visible
+	at SearchTests.searchByProductCategory(SearchTests.java:39)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at SearchTests.searchByProductCategory(SearchTests.java:39)
+
+searchByProductCategoryWithAdditionalParameters(SearchTests)  Time elapsed: 13.363 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.className: //li[@class='item']}
+Expected: visible
+	at SearchTests.searchByProductCategoryWithAdditionalParameters(SearchTests.java:48)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at SearchTests.searchByProductCategoryWithAdditionalParameters(SearchTests.java:48)
+

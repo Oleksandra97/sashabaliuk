@@ -9,12 +9,56 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Search test suite</th></tr>
-<tr><td><a href="#t0">test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">49,060</td><td></td><td></td></tr>
+<tr><td><a href="#t0">test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">2</td><td class="num">95,409</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Search test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">SearchTests</td><td><a href="#m0">searchByProductCategory</a></td><td rowspan="1">1517215594438</td><td rowspan="1">6956</td></tr><tr class="passedeven"><td><a href="#m1">searchByProductCategoryWithAdditionalParameters</a></td><td rowspan="1">1517215603267</td><td rowspan="1">10913</td></tr><tr class="passedeven"><td><a href="#m2">searchWithCorrectData</a></td><td rowspan="1">1517215584251</td><td rowspan="1">3138</td></tr><tr class="passedeven"><td><a href="#m3">searchWithIncorrectData</a></td><td rowspan="1">1517215589272</td><td rowspan="1">2139</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Search test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">SearchTests</td><td><a href="#m0">searchByProductCategory</a></td><td rowspan="1">1517931398568</td><td rowspan="1">11838</td></tr><tr class="failedeven"><td><a href="#m1">searchByProductCategoryWithAdditionalParameters</a></td><td rowspan="1">1517931412913</td><td rowspan="1">13352</td></tr><tr><th colspan="4">test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SearchTests</td><td><a href="#m2">searchWithCorrectData</a></td><td rowspan="1">1517931383087</td><td rowspan="1">6590</td></tr><tr class="passedeven"><td><a href="#m3">searchWithIncorrectData</a></td><td rowspan="1">1517931393553</td><td rowspan="1">1594</td></tr></tbody>
 </table>
-<h2>test</h2><h3 id="m0">SearchTests#searchByProductCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SearchTests#searchByProductCategoryWithAdditionalParameters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>test</h2><h3 id="m0">SearchTests#searchByProductCategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.className: //li[@class=&apos;item&apos;]}
+Expected: visible
+Screenshot: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931409180.0.png
+Page source: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931409180.0.html
+Timeout: 4 s.
+Caused by: java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:52)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:87)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:63)
+	at com.sun.proxy.$Proxy5.shouldHave(Unknown Source)
+	at SearchTests.searchByProductCategory(SearchTests.java:39)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.codeborne.selenide.impl.CollectionElement.getWebElement(CollectionElement.java:40)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+	... 37 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SearchTests#searchByProductCategoryWithAdditionalParameters</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.className: //li[@class=&apos;item&apos;]}
+Expected: visible
+Screenshot: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931425739.1.png
+Page source: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931425739.1.html
+Timeout: 4 s.
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:52)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:87)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:63)
+	at com.sun.proxy.$Proxy5.shouldHave(Unknown Source)
+	at SearchTests.searchByProductCategoryWithAdditionalParameters(SearchTests.java:48)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.codeborne.selenide.impl.CollectionElement.getWebElement(CollectionElement.java:40)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+	... 37 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">SearchTests#searchWithCorrectData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">SearchTests#searchWithIncorrectData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

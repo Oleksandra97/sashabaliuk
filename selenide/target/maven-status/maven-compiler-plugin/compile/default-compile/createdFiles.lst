@@ -1,3 +1,4 @@
+pages\BasePage.class
 pages\CategoryRequestPage.class
 core\PropertyHandler.class
 pages\SearchRequestPage.class

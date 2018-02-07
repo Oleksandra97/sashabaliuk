@@ -19,6 +19,7 @@ public class LoginTests extends  BaseTest{
                             propertyHandler.getStringProperty("correctPassword"));
 
         $(By.id("js-profile-switcher")).shouldBe(visible);
+        mainPage.logout();
     }
 
     @Test

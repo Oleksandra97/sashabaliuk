@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Search_test_suite">
-              <span class="suite-name border-passed">Search test suite</span>
+              <span class="suite-name border-failed">Search test suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Search_test_suite">
-                    <span>C:\Users\Oleksandra_Baliuk\Documents\Java\TAL_Oleksandra_Baliuk\selenide\src\test\resources\TestSuite.xml</span>
+                    <span>D:\gitHabRepo\sashabaliuk\selenide\src\test\resources\TestSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Search_test_suite" class="hide-methods failed suite-Search_test_suite"> (hide)</a> <!-- hide-methods failed suite-Search_test_suite -->
+                      <a href="#" panel-name="suite-Search_test_suite" class="show-methods failed suite-Search_test_suite"> (show)</a> <!-- show-methods failed suite-Search_test_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Search_test_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Search_test_suite" title="SearchTests" hash-for-method="searchByProductCategory">searchByProductCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Search_test_suite" title="SearchTests" hash-for-method="searchByProductCategoryWithAdditionalParameters">searchByProductCategoryWithAdditionalParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Search_test_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,16 +119,6 @@
                       <a href="#" panel-name="suite-Search_test_suite" class="show-methods passed suite-Search_test_suite"> (show)</a> <!-- show-methods passed suite-Search_test_suite -->
                     </span>
                     <div class="method-list-content passed suite-Search_test_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Search_test_suite" title="SearchTests" hash-for-method="searchByProductCategory">searchByProductCategory</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Search_test_suite" title="SearchTests" hash-for-method="searchByProductCategoryWithAdditionalParameters">searchByProductCategoryWithAdditionalParameters</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Search_test_suite" title="SearchTests" hash-for-method="searchWithCorrectData">searchWithCorrectData</a> <!-- method navigator-link -->
@@ -132,9 +141,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Search_test_suite" class="panel Search_test_suite">
-          <div class="suite-Search_test_suite-class-passed">
+          <div class="suite-Search_test_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">SearchTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,6 +152,30 @@
                   <a name="searchByProductCategory">
                   </a> <!-- searchByProductCategory -->
                   <span class="method-name">searchByProductCategory</span>
+                  <div class="stack-trace">Element not found {By.className: //li[@class=&apos;item&apos;]}
+Expected: visible
+Screenshot: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931409180.0.png
+Page source: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931409180.0.html
+Timeout: 4 s.
+Caused by: java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:52)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:87)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:63)
+	at com.sun.proxy.$Proxy5.shouldHave(Unknown Source)
+	at SearchTests.searchByProductCategory(SearchTests.java:39)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 2, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.codeborne.selenide.impl.CollectionElement.getWebElement(CollectionElement.java:40)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+	... 37 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -150,8 +183,40 @@
                   <a name="searchByProductCategoryWithAdditionalParameters">
                   </a> <!-- searchByProductCategoryWithAdditionalParameters -->
                   <span class="method-name">searchByProductCategoryWithAdditionalParameters</span>
+                  <div class="stack-trace">Element not found {By.className: //li[@class=&apos;item&apos;]}
+Expected: visible
+Screenshot: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931425739.1.png
+Page source: file:/D:/gitHabRepo/sashabaliuk/selenide/build/reports/tests/1517931425739.1.html
+Timeout: 4 s.
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:52)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:87)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:63)
+	at com.sun.proxy.$Proxy5.shouldHave(Unknown Source)
+	at SearchTests.searchByProductCategoryWithAdditionalParameters(SearchTests.java:48)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.codeborne.selenide.impl.CollectionElement.getWebElement(CollectionElement.java:40)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+	... 37 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Search_test_suite-class-failed -->
+          <div class="suite-Search_test_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SearchTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="searchWithCorrectData">
@@ -171,7 +236,7 @@
         </div> <!-- panel Search_test_suite -->
         <div panel-name="test-xml-Search_test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Oleksandra_Baliuk\Documents\Java\TAL_Oleksandra_Baliuk\selenide\src\test\resources\TestSuite.xml</span>
+            <span class="header-content">D:\gitHabRepo\sashabaliuk\selenide\src\test\resources\TestSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -232,24 +297,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchByProductCategoryWithAdditionalParameters')
 data.setCell(0, 2, 'SearchTests')
-data.setCell(0, 3, 10913);
+data.setCell(0, 3, 13352);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'searchByProductCategory')
 data.setCell(1, 2, 'SearchTests')
-data.setCell(1, 3, 6956);
+data.setCell(1, 3, 11838);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'searchWithCorrectData')
 data.setCell(2, 2, 'SearchTests')
-data.setCell(2, 3, 3138);
+data.setCell(2, 3, 6590);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'searchWithIncorrectData')
 data.setCell(3, 2, 'SearchTests')
-data.setCell(3, 3, 2139);
+data.setCell(3, 3, 1594);
 window.suiteTableData['Search_test_suite']= { tableData: data, tableDiv: 'times-div-Search_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Search_test_suite">
               </div> <!-- times-div-Search_test_suite -->
             </div> <!-- times-div -->
@@ -289,35 +354,39 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searchWithCorrectData</span>
-                <span class="method-start">16622 ms</span>
+                <span class="method-start">47038 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">19761 ms</span>
+                <span class="method-start">53629 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">searchWithIncorrectData</span>
-                <span class="method-start">21643 ms</span>
+                <span class="method-start">57504 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">23782 ms</span>
+                <span class="method-start">59098 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">searchByProductCategory</span>
-                <span class="method-start">26809 ms</span>
+                <span class="method-start">62519 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">33765 ms</span>
+                <span class="method-start">74393 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">searchByProductCategoryWithAdditionalParameters</span>
-                <span class="method-start">35638 ms</span>
+                <span class="method-start">76864 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">46551 ms</span>
+                <span class="method-start">90217 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
