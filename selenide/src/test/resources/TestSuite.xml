@@ -7,10 +7,6 @@
             <class name="SearchTests">
                 <methods>
                     <include name="searchWithCorrectData"/>
-                    <include name="searchWithIncorrectData"/>
-                    <include name="searchByProductCategory"/>
-                    <include name="searchByProductCategoryWithAdditionalParameters"/>
-                    <include name="searcWomenProducts"/>
                 </methods>
             </class>
         </classes>

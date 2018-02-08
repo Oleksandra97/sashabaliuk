@@ -7,8 +7,6 @@
             <class name="LoginTests">
                 <methods>
                     <include name="loginWithCorrectData"/>
-                    <include name="loginWithIncorrectData"/>
-                    <include name="logOut"/>
                 </methods>
             </class>
         </classes>
