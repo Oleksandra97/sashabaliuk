@@ -5,9 +5,6 @@
     <test name="test">
         <classes>
             <class name="LoginTests">
-                <methods>
-                    <include name="loginWithCorrectData"/>
-                </methods>
             </class>
         </classes>
     </test>
