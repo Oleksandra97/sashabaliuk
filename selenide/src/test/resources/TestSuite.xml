@@ -5,6 +5,9 @@
     <test name="test">
         <classes>
             <class name="SearchTests">
+                <methods>
+                    <include name="searchWithCorrectData"/>
+                </methods>
             </class>
         </classes>
     </test>
